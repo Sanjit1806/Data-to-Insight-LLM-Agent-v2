@@ -6,7 +6,7 @@ from agent import create_agent, query_agent
 
 st.set_page_config(page_title="Data-to-Insight Agent v2", layout="wide")
 st.title("📊 Data-to-Insight Agent v2")
-st.write("Upload a CSV, ask your question, and let the Agent show you insights, charts or answers.")
+st.write("Upload a CSV, ask your question, and let the Agent show you insights or charts")
 data = st.file_uploader("", type=["csv"])
 if data is not None:
     query = st.text_input("Ask a question about your data:")
