@@ -1,6 +1,6 @@
 # 📊 Data-to-Insight AI Agent v2
 
-A Gemini-powered LLM app that lets users upload CSV files, ask natural language questions, and receive smart answers, tables, and visual charts—all through an intuitive Streamlit interface.
+An LLM app using Langchain and Gemini Lanhuage Model to answer user questions from dats files, returning smart insights, structured tables, and auto-generated visual charts through natural language queries.
 
 ---
 
