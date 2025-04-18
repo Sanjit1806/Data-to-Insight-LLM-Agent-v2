@@ -40,7 +40,7 @@ An LLM app using Langchain orchestration and Gemini Language Model to answer use
 
 ## Interface
 
-<img src="Output_Screenshots/DelayedOrdersTable.png" alt="Example Response" width="650"/>
+<img src="output_screenshots/Question3_LineChart.png" alt="Image" width="650"/>
 
 ---
 
