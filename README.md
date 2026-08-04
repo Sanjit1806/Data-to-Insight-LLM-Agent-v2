@@ -7,11 +7,12 @@ An LLM app using Langchain orchestration and Gemini Language Model to answer use
 ## Project Structure
 
 ```bash
-📂 cdata-to-insight-agent-v2
+📂 data-to-insight-agent-v2
 ├── 📄 interface.py           # Streamlit app to chat with your CSV
 ├── 📄 agent.py               # Loads CSV, builds LLM prompt and parses structured response
+├── 📄 test_models.py         # Test script to verify which Gemini models work with your API key
 ├── 📄 .env                   # Stores API key
-├── 📄 .gitignore
+├── 📄 .gitignore       # Sample order data for testing
 └── 📄 requirements.txt       # Required packages
 ```
 
@@ -20,21 +21,23 @@ An LLM app using Langchain orchestration and Gemini Language Model to answer use
 ## Key Features
 
 - **CSV Upload**: Upload any CSV with product or order data.
-- **Natural Language Querying**: Ask anything like “What are my delayed orders?” or “Top 5 products by quantity”.
+- **Natural Language Querying**: Ask anything like "What are my delayed orders?" or "Top 5 products by quantity".
 - **Visual Responses**: Auto-generates response, tables, bar charts, or line charts using LLM-guided insights.
-- **Structured JSON Prompting**: Agent uses JSON formating for clean parsing.
+- **Structured JSON Prompting**: Agent uses JSON formatting for clean parsing.
 - **LLM Answering**: Uses Gemini to generate contextual answers.
+- **Rate Limit Handling**: Built-in retry logic for free-tier quota limits.
 
 ---
 
 ## Requirements
 
-  - `Python 3.10`
+  - `Python 3.10+`
   - `streamlit`
   - `pandas`
   - `langchain`
-  - `langchain-google-genai`
+  - `langchain-google-genai >= 4.0.0`
   - `python-environ`
+  - `python-dotenv`
 
 ---
 
@@ -48,8 +51,8 @@ An LLM app using Langchain orchestration and Gemini Language Model to answer use
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/chat-with-csv-gemini.git
-   cd chat-with-csv-gemini
+   git clone https://github.com/your-username/data-to-insight-agent-v2.git
+   cd data-to-insight-agent-v2
    ```
 
 2. Install the dependencies:
@@ -62,6 +65,7 @@ An LLM app using Langchain orchestration and Gemini Language Model to answer use
    ```env
    GEMINI_API_KEY=your_google_gemini_api_key
    ```
+   Get a free key at: https://aistudio.google.com/apikey
 
 4. Run the Streamlit App:
    ```bash
@@ -79,9 +83,9 @@ An LLM app using Langchain orchestration and Gemini Language Model to answer use
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- **Gemini 2.0 Flash**: Pre-trained LLM
+- **Gemini 3.5 Flash-Lite**: Pre-trained LLM (free tier)
 - **Langchain**: LLM interface and prompt orchestration
 - **Streamlit**: Web UI
 - **Pandas**: Data handling and Visualization
