@@ -10,7 +10,6 @@ environ.Env.read_env()
 API_KEY = env("GEMINI_API_KEY")
 
 # Set up Gemini model (free tier)
-# Tested working models - uncomment your preferred one:
 llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash-lite", google_api_key=API_KEY)
 # llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash", google_api_key=API_KEY)
 # llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", google_api_key=API_KEY)
