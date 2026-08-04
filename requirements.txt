@@ -1,7 +1,8 @@
 langchain
 langchain_experimental
-langchain-google-genai
+langchain-google-genai>=4.0.0
 streamlit
 pandas
 python-environ
+python-dotenv
 tabulate
