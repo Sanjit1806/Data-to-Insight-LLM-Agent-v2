@@ -1,6 +1,6 @@
 # 📊 Data-to-Insight AI Agent v2
 
-An LLM app using Langchain orchestration and Gemini Language Model to answer user questions from dats files, returning smart insights, structured tables, and auto-generated visual charts through natural language queries.
+An LLM app using Langchain orchestration and Gemini Language Model to answer user questions from data files, returning smart insights, structured tables, and auto-generated visual charts through natural language queries.
 
 ---
 
